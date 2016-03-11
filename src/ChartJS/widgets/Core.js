@@ -58,10 +58,11 @@ define([
 
         _currentContext: null,
         _addedToBody: false,
+        _onClickHandle: null,
 
         startup: function () {
             // Uncomment line to start debugging
-            //logger.level(logger.DEBUG); 
+            //logger.level(logger.DEBUG);
             logger.debug(this.id + ".startup");
 
             var domNode = null;
@@ -195,6 +196,9 @@ define([
             if (this._handle !== null) {
                 mx.data.unsubscribe(this._handle);
             }
+            if (this._onClickHandle !== null) {
+                this.disconnect(this._onClickHandle);
+            }
         },
 
         customTooltip: function (tooltip) {
@@ -286,9 +290,10 @@ define([
             console.error("_createChart: This is placeholder function that should be overwritten by the implementing widget.", data);
         },
 
-        _onClickChart: function () {
+        _onClickChart: function (evt) {
             logger.debug(this.id + "._onClickChart");
-            if (this.onclickmf) {
+            var element = this._chart.getElementAtEvent(evt).length ? this._chart.getElementAtEvent(evt)[0] : null;
+            if (this.onclickmf && element) {
                 this._executeMicroflow(this.onclickmf);
             }
         },

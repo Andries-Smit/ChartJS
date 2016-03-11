@@ -238,10 +238,7 @@ define([
                 // Add class to determain chart type
                 this._addChartClass("chartjs-line-chart");
 
-                if (this.onclickmf) {
-                    on(this._chart.chart.canvas, "click", lang.hitch(this, this._onClickChart));
-                }
-
+                this._onClickHandle = this.connect(this._chart.chart.canvas, "click", lang.hitch(this, this._onClickChart));
             }
         }
 
