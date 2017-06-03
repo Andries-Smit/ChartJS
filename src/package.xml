@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.mendix.com/package/1.0/">
-    <clientModule name="ChartJS" version="3.5.2" xmlns="http://www.mendix.com/clientModule/1.0/">
+    <clientModule name="ChartJS" version="3.6.0" xmlns="http://www.mendix.com/clientModule/1.0/">
         <widgetFiles>
             <widgetFile path="ChartJS/widgets/BarChart/BarChart.xml"/>
             <widgetFile path="ChartJS/widgets/LineChart/LineChart.xml"/>
@@ -9,6 +9,7 @@
             <widgetFile path="ChartJS/widgets/PieChart/PieChart.xml"/>
             <widgetFile path="ChartJS/widgets/PolarChart/PolarChart.xml"/>
             <widgetFile path="ChartJS/widgets/DoughnutChart/DoughnutChart.xml"/>
+            <widgetFile path="ChartJS/widgets/ScatterChart/ScatterChart.xml"/>
         </widgetFiles>
         <files>
             <file path="ChartJS/widgets/BarChart/widget/"/>
@@ -18,6 +19,7 @@
             <file path="ChartJS/widgets/PieChart/widget/"/>
             <file path="ChartJS/widgets/PolarChart/widget/"/>
             <file path="ChartJS/widgets/DoughnutChart/widget/"/>
+            <file path="ChartJS/widgets/ScatterChart/widget/"/>
         </files>
     </clientModule>
 </package>

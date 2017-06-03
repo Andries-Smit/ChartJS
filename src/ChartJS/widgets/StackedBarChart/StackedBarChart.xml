@@ -208,6 +208,7 @@
         <attributeType name="Float"/>
         <attributeType name="Integer"/>
         <attributeType name="Long"/>
+        <attributeType name="Decimal"/>
     </attributeTypes>
 </property>
 <property key="seriesylabel" type="attribute" entityProperty="datapointentity" allowNonPersistableEntities="true" required="true">

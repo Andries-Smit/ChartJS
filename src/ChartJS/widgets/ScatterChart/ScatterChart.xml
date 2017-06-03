@@ -1,30 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="ChartJS.widgets.LineChart.widget.LineChart" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
-    <name>ChartJS - Line Chart</name>
-    <description>.</description>
-
+<widget id="ChartJS.widgets.ScatterChart.widget.ScatterChart" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../../../../xsd/widget.xsd">
+    <name>ChartJS - Scatter Chart</name>
+    <description>Scatter charts can be created by changing the linear X, Y axis. Using values, not labels.</description>
     <icon>
-        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
+        iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AccCy0sbNhc+AAAAzZJREFUeNrt3U1ugkAAgNFBSKwbk1k3MeqWs3gDj+eV3Llx4QU0jSER6KrLJm2l8jPv7asw4JfBIhMCAAAAAAAAAAAAAAAAADBsmSHo336/D/f7Pal9XiwW4XA4OPhQlqV9phczQwACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACALxIYQjgW+0ItvGptT3MAMAlACAAgAAAAgAIACAAwOS4D4AvL/2f9/F4/MufZQ6TGQAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAwABNeW3AdgTbaK07zAAAAQDGfAkQYwx1XQ9ix67Xq6MLrwzA7XYLj8fDqEKKAYCJmfyXtL4DgIQJAAgAIACAAAACAAgAMFXuA+CLHyaZAQACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIABAhywMMh7tCLbR4iJmAIAAAC4BpjwdzfM81HXtLMIMABAA+JGyLA2CAAACAAgAIACAAAACAAgAIACAAAACAAgAIADAL3kiEKO2Wq1C0zTJ7G+e5+F8PgsAhBDC5XJJ6pkMRdHtR9YlAPgOABAAQAAAAQAEABAAQAAAAQAEABAAQACAcenrx0DWugczAEAAAAEABAAQAEAAAAEABADokKcCj4cbkzADAAQAEABAAAABAAQAEABAAAABAAQAEABAAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABADoT9HT+1rrHswAAAEABAAQAEAAAAEABAAQAEAAAAEAntLprcDr9To0TZNOPWezcDqdnn6dGGPYbrdJnXgxxk5eZ7PZOOcAAAAAAAAAAAAAAAAAAACAScmWy+VHVVWeDASJmc/nTVFV1ZsAQJIaH3xImACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIADAPyh2u91727ZGAhKTZZlBAAAAAAAAAAAAAAAAAIDB+wRQ+0gDgwXicgAAAABJRU5ErkJggg==
     </icon>
-
     <properties>
         <!-- Appearance -->
-        <property key="width" type="integer" required="true" defaultValue="500">
-            <caption>Width</caption>
-            <category>Appearance</category>
-            <description>Initial width of the chart canvas, will be ignored when responsive property is set to 'Yes'</description>
-        </property>
-        <property key="xLabel" type="string" required="false" defaultValue="">
-            <caption>X-axis label</caption>
-            <category>Appearance</category>
-            <description>Label to show on the X-axis. Leave empty for no label</description>
-        </property>
-        <property key="yLabel" type="string" required="false" defaultValue="">
-            <caption>Y-axis label</caption>
-            <category>Appearance</category>
-            <description>Label to show on the Y-axis. Leave empty for no label</description>
-        </property>
-        <property key="chartTitle" type="string" required="false" defaultValue="">
+        <property key="chartTitle" type="string" required="false">
             <caption>Title</caption>
             <category>Appearance</category>
             <description>The title of the chart. Will be shown above the chart. Leave empty for no title</description>
@@ -34,20 +17,30 @@
             <category>Appearance</category>
             <description>The size of the chart title. Default is 12</description>
         </property>
-        <property key="isStacked" type="boolean" required="true" defaultValue="false">
-            <caption>Stacked</caption>
+        <property key="width" type="integer" required="true" defaultValue="500">
+            <caption>Width</caption>
             <category>Appearance</category>
-            <description>When yes, different dataset will stack on top of eachother on the Y-axis</description>
+            <description>Initial width of the chart canvas, will be ignored when responsive property is set to 'Yes'</description>
         </property>
         <property key="height" type="integer" required="true" defaultValue="250">
             <caption>Height</caption>
             <category>Appearance</category>
             <description>Initial height of the chart canvas, will be ignored when responsive property is set to 'Yes'</description>
         </property>
+        <property key="responsive" type="boolean" required="true" defaultValue="true">
+            <caption>Responsive</caption>
+            <category>Appearance</category>
+            <description>Resizes when the canvas container does.</description>
+        </property>
         <property key="responsiveRatio" type="integer" required="true" defaultValue="0">
             <caption>Responsive w/h ratio (%)</caption>
             <category>Appearance</category>
             <description>Responsive is set to 'true': Responsive width height ratio default value is 0, which means it will set the height of the chart the same height as the container. If you set this value to a certain number, it will create a chart where the height is a percentage of the width. So 100 means the height will be 100% of the width (a square)</description>
+        </property>
+        <property key="maintainAspectRatio" type="boolean" required="true" defaultValue="true">
+            <caption>Maintain aspect ratio</caption>
+            <category>Appearance</category>
+            <description>whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container</description>
         </property>
         <property key="labelFont" type="string" required="true" defaultValue="Helvetica Neue">
             <caption>Font</caption>
@@ -58,7 +51,7 @@
         <property key="responsiveAnimationDuration" type="integer" required="true" defaultValue="1000">
             <caption>Responsive animation duration</caption>
             <category>Animation</category>
-            <description>Animation duration (milliseconds) for responsive resizing. (Note: When implementing multiple charts, there can be problems with rendering. You can set this to 0 when having problems)</description>
+            <description>Duration in milliseconds it takes to animate to new size after a resize event. (Note: When implementing multiple charts, there can be problems with rendering. You can set this to 0 when having problems)</description>
         </property>
         <property key="chartAnimation" type="boolean" required="true" defaultValue="true">
             <caption>Animation</caption>
@@ -120,16 +113,6 @@
             <description>Microflow returning a 'Chart Entity' object.</description>
             <returnType type="Object" entityProperty="sourceentity"></returnType>
         </property>
-		<!--Placeholder-->
-        <!--<property key="sourceTrigger" type="attribute" entityProperty="sourceentity" allowNonPersistableEntities="true" required="false">
-            <caption>Attribute to trigger</caption>
-            <category>Data Set</category>
-            <description>Attribute to trigger the microflow.</description>
-            <attributeTypes>
-                <attributeType name="Enum"/>
-                <attributeType name="String"/>
-            </attributeTypes>
-        </property>-->
         <!-- Data Set -->
         <property key="datasetentity" type="entity" required="true" allowNonPersistableEntities="true" entityProperty="sourceentity" isPath="yes" pathType="referenceSet">
             <caption>Data Set Entity</caption>
@@ -158,6 +141,15 @@
                 <attributeType name="Long"/>
                 <attributeType name="Decimal"/>
             </attributeTypes>
+        </property>  
+        <property key="seriesShape" type="attribute" entityProperty="datasetentity" allowNonPersistableEntities="true" required="false">
+            <caption>Data Point Shape</caption>
+            <category>Data Set</category>
+            <description>'circle', 'triangle', 'rect', 'rectRot', 'cross', 'crossRot', 'star', 'line', and 'dash' when ommitted default circle</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+                <attributeType name="Enum"/>
+            </attributeTypes>
         </property>
         <property key="seriescolor" type="attribute" entityProperty="datasetentity" allowNonPersistableEntities="true" required="true">
             <caption>Fill Color (in Hex)</caption>
@@ -177,11 +169,6 @@
             <attributeType name="String"/>
             </attributeTypes>
         </property>
-        <property key="seriescolorfilled" type="boolean" required="true" defaultValue="true">
-            <caption>Filled</caption>
-            <category>Appearance</category>
-            <description>Fill the space below the line</description>
-        </property>
             <property key="seriesColorReduceOpacity" type="boolean" required="true" defaultValue="true">
             <caption>Reduce opacity</caption>
             <category>Data Set</category>
@@ -193,184 +180,39 @@
             <category>Data Point</category>
             <description>Entity containing X-axis and Y-axis values</description>
         </property>
-        <property key="seriesxlabel" type="attribute" entityProperty="datapointentity" allowNonPersistableEntities="true" required="true">
+        <property key="seriesxValue" type="attribute" entityProperty="datapointentity" allowNonPersistableEntities="true" required="true">
             <caption>X Value</caption>
             <category>Data Point</category>
             <description>X-axis value</description>
             <attributeTypes>
-                <attributeType name="AutoNumber"/>
-                <attributeType name="Boolean"/>
                 <attributeType name="Currency"/>
-                <attributeType name="DateTime"/>
-                <attributeType name="Enum"/>
-                <attributeType name="Float"/>
-                <attributeType name="Integer"/>
-                <attributeType name="Long"/>
-                <attributeType name="String"/>
-                <attributeType name="Decimal"/>
-            </attributeTypes>
-        </property>
-        <property key="sortingxvalue" type="attribute" entityProperty="datapointentity" allowNonPersistableEntities="true" required="true">
-            <caption>X sorting</caption>
-            <category>Data Point</category>
-            <description>Attribute value is used for sorting datapoint on X-Axis </description>
-            <attributeTypes>
-                <attributeType name="AutoNumber"/>
-                <attributeType name="Currency"/>
-                <attributeType name="DateTime"/>
                 <attributeType name="Float"/>
                 <attributeType name="Integer"/>
                 <attributeType name="Long"/>
                 <attributeType name="Decimal"/>
             </attributeTypes>
         </property>
-        <property key="seriesylabel" type="attribute" entityProperty="datapointentity" allowNonPersistableEntities="true" required="true">
+        <property key="seriesyValue" type="attribute" entityProperty="datapointentity" allowNonPersistableEntities="true" required="true">
             <caption>Y value</caption>
             <category>Data Point</category>
             <description>.</description>
             <attributeTypes>
-                <attributeType name="AutoNumber"/>
-                <attributeType name="Boolean"/>
                 <attributeType name="Currency"/>
-                <attributeType name="DateTime"/>
-                <attributeType name="Enum"/>
                 <attributeType name="Float"/>
                 <attributeType name="Integer"/>
                 <attributeType name="Long"/>
-                <attributeType name="String"/>
                 <attributeType name="Decimal"/>
             </attributeTypes>
         </property>
-        <property key="roundY" type="string" required="true" defaultValue="-1">
+        <property key="roundY" type="integer" required="true" defaultValue="0">
             <caption>Round Y value</caption>
             <category>Data Point</category>
-            <description>Number of decimals to round the value on the Y-axis. Disable it by setting it to '-1'</description>
+            <description>Number of decimals to round the value on the Y-axis.</description>
         </property>
-        <!-- Behavior -->
-        <property key="onclickmf" type="microflow" required="false">
-            <caption>On Click Microflow</caption>
-            <category>Behavior</category>
-            <description>Microflow to invoke when chart canvas is clicked</description>
-            <returnType type="Void"></returnType>
-        </property>
-        <property key="onclickDataSetMf" type="microflow" required="false" entityProperty="datasetentity">
-            <caption>On Click Dataset Microflow</caption>
-            <category>Behavior</category>
-            <description>Microflow to invoke when chart canvas is clicked. This Microflow will pass the Dataset object 'Data set entity'</description>
-            <returnType type="Void"></returnType>
-        </property>
-        <property key="onclickDataPointMf" type="microflow" required="false" entityProperty="datapointentity">
-            <caption>On Click Datapoint Microflow</caption>
-            <category>Behavior</category>
-            <description>Microflow to invoke when chart canvas is clicked. This Microflow will pass the Datapoint object 'Data point entity'</description>
-            <returnType type="Void"></returnType>
-        </property>
-        <!-- Settings -->
-        <property key="responsive" type="boolean" required="true" defaultValue="true">
-            <caption>Responsive</caption>
-            <category>Appearance</category>
-            <description>Chart canvas dimensions respond to changes in layout</description>
-        </property>
-        <property key="scaleBeginAtZero" type="boolean" required="true" defaultValue="true">
-            <caption>Begin at zero</caption>
-            <category>Settings</category>
-            <description>Whether the scale should start at zero, or an order of magnitude down from the lowest value</description>
-        </property>
-        <property key="scaleShow" type="boolean" required="true" defaultValue="true">
-            <caption>Show scales</caption>
-            <category>Settings</category>
-            <description>Whether scales are shown. This will enable/disable scales, scale labels and gridlines</description>
-        </property>
-        <property key="scaleGridLineColor" type="string" required="true" defaultValue="rgba(0,0,0,.05)">
-            <caption>Grid line color</caption>
-            <category>Settings</category>
-            <description>Color of the grid lines.(rgba)</description>
-        </property>
-        <property key="scaleGridLineWidth" type="string" required="true" defaultValue="1">
-            <caption>Grid line width</caption>
-            <category>Settings</category>
-            <description>Width of the grid lines.</description>
-        </property>
-        <property key="scaleShowHorizontalLines" type="boolean" required="true" defaultValue="true">
-            <caption>Show horizontal lines</caption>
-            <category>Settings</category>
-            <description>Whether to show horizontal lines (Does not affect X-axis).</description>
-        </property>
-        <property key="scaleShowVerticalLines" type="boolean" required="true" defaultValue="true">
-            <caption>Show vertical lines</caption>
-            <category>Settings</category>
-            <description>Whether to show vertical grid lines (Does not effect Y-axis).</description>
-        </property>
-        <property key="datasetStroke" type="boolean" required="true" defaultValue="true">
-            <caption>DataSet stroke</caption>
-            <category>Settings</category>
-            <description>Whether to show a stroke for datasets.</description>
-        </property>
-        <property key="datasetStrokeWidth" type="string" required="true" defaultValue="2">
-            <caption>DataSet stroke width</caption>
-            <category>Settings</category>
-            <description>Pixel width of dataset stroke.</description>
-        </property>
-        <property key="datasetFill" type="boolean" required="true" defaultValue="true">
-            <caption>DataSet fill</caption>
-            <category>Settings</category>
-            <description>Whether to fill the dataset with a color.</description>
-        </property>
-        <property key="showLegend" type="boolean" required="true" defaultValue="true">
-            <caption>Show Legend (ChartJS)</caption>
-            <category>Legend</category>
-            <description>Displays a legend inside the graph</description>
-        </property>
-        <property key="showLegendCustom" type="boolean" required="true" defaultValue="false">
-            <caption>Show Legend (Custom)</caption>
-            <category>Legend</category>
-            <description>Displays a legend outside the graph</description>
-        </property>
-        <property key="scaleShowLabelsBottom" type="boolean" required="true" defaultValue="true">
-            <caption>Show labels X-axis</caption>
-            <category>Settings</category>
-            <description>Whether to show labels on the X-axis scale.</description>
-        </property>
-        <property key="scaleShowLabels" type="boolean" required="true" defaultValue="true">
-            <caption>Show labels Y-axis</caption>
-            <category>Settings</category>
-            <description>Whether to show labels on Y-axis the scale.</description>
-        </property>
-        <property key="showTooltips" type="boolean" required="true" defaultValue="true">
-            <caption>Show tooltip</caption>
-            <category>Settings</category>
-            <description>Determines whether to draw tooltips on the canvas or not.</description>
-        </property>
-        <!--<property key="tooltipForm" type="form" required="false">
-            <caption>Tooltip form</caption>
-            <category>Settings</category>
-			<description>.</description>
-        </property>-->
-        <property key="maintainAspectRatio" type="boolean" required="true" defaultValue="true">
-            <caption>Maintain aspect ratio</caption>
-            <category>Settings</category>
-            <description>whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container</description>
-        </property>
-        <!-- Line settings -->
-        <property key="bezierCurve" type="boolean" required="true" defaultValue="true">
-            <caption>Bezier curve</caption>
-            <category>Settings Line Chart</category>
-            <description>Whether the line is curved between points.</description>
-        </property>
-        <property key="maxTickSize" type="integer" required="true" defaultValue="0">
-            <caption>Max tick size (X axis)</caption>
-            <category>Settings Line Chart</category>
-            <description>When there are many points on the X axis (horizontal), the labels can overlap. Setting the tick size means it will render only a certain amount of labels. Setting this to 0 will render them all</description>
-        </property>
-        <property key="bezierCurveTension" type="string" required="true" defaultValue="0.4">
-            <caption>Bezier curve tension</caption>
-            <category>Settings Line Chart</category>
-            <description>Tension of the bezier curve between points. (This is usually around 0.4 or lower)</description>
-        </property>
-        <property key="pointDot" type="boolean" required="true" defaultValue="true">
-            <caption>Show dot</caption>
+        <property key="roundX" type="integer" required="true" defaultValue="0">
+            <caption>Round X value</caption>
             <category>Data Point</category>
-            <description>Show dots on a data point.</description>
+            <description>Number of decimals to round the value on the Y-axis.</description>
         </property>
         <property key="pointRadius" type="integer" required="true" defaultValue="3">
             <caption>Dot radius</caption>
@@ -397,15 +239,147 @@
             <category>Data Point</category>
             <description>Width of stroke when hovered over it</description>
         </property>
-        <property key="scaleLineWidth" type="string" required="true" defaultValue="1.0">
-            <caption>Scale line width</caption>
-            <category>Settings Line Chart</category>
-            <description>The scale line width.</description>
+        <!-- Behavior -->
+        <property key="onclickmf" type="microflow" required="false">
+            <caption>On Click Microflow</caption>
+            <category>Behavior</category>
+            <description>Microflow to invoke when chart canvas is clicked</description>
+            <returnType type="Void"></returnType>
         </property>
-        <property key="scaleLineColor" type="string" required="true" defaultValue="rgba(0,0,0,.1)">
-            <caption>Scale line color</caption>
-            <category>Settings Line Chart</category>
-            <description>The scale line color.</description>
+        <property key="onclickDataSetMf" type="microflow" required="false" entityProperty="datasetentity">
+            <caption>On Click Dataset Microflow</caption>
+            <category>Behavior</category>
+            <description>Microflow to invoke when chart canvas is clicked. This Microflow will pass the Dataset object 'Data set entity'</description>
+            <returnType type="Void"></returnType>
+        </property>
+        <property key="onclickDataPointMf" type="microflow" required="false" entityProperty="datapointentity">
+            <caption>On Click Datapoint Microflow</caption>
+            <category>Behavior</category>
+            <description>Microflow to invoke when chart canvas is clicked. This Microflow will pass the Datapoint object 'Data point entity'</description>
+            <returnType type="Void"></returnType>
+        </property>
+        <property key="showTooltips" type="boolean" required="true" defaultValue="true">
+            <caption>Show tooltip</caption>
+            <category>Behavior</category>
+            <description>Determines whether to draw tooltips on the canvas or not.</description>
+        </property>
+        <!-- Scale -->
+        <property key="scaleShow" type="boolean" required="true" defaultValue="true">
+            <caption>Show scales</caption>
+            <category>Scale</category>
+            <description>Whether scales are shown. This will enable/disable scales, scale labels and gridlines</description>
+        </property>
+        <property key="scaleBeginAtZero" type="boolean" required="true" defaultValue="true">
+            <caption>Begin at zero</caption>
+            <category>Scale</category>
+            <description>If true, scale will inclulde 0 if it is not already included.</description>
+        </property>
+        <property key="xLabelTop" type="string" required="false">
+            <caption>Label X-axis Top</caption>
+            <category>Scale</category>
+            <description>Label to show on the X-axis. Leave empty for no label</description>
+        </property>
+        <property key="xLabel" type="string" required="false">
+            <caption>Label X-axis Bottom</caption>
+            <category>Scale</category>
+            <description>Label to show on the X-axis. Leave empty for no label</description>
+        </property>
+        <property key="yLabel" type="string" required="false">
+            <caption>Label Y-axis Left</caption>
+            <category>Scale</category>
+            <description>Label to show on the Y-axis. Leave empty for no label</description>
+        </property>
+        <property key="yLabelRight" type="string" required="false">
+            <caption>Label Y-axis Right</caption>
+            <category>Scale</category>
+            <description>Label to show on the Y-axis. Leave empty for no label</description>
+        </property>
+        <property key="scaleShowLabelsBottom" type="boolean" required="true" defaultValue="true">
+            <caption>Data labels X-axis</caption>
+            <category>Scale</category>
+            <description>Whether to show values on the X-axis scale.</description>
+        </property>
+        <property key="scaleShowLabels" type="boolean" required="true" defaultValue="true">
+            <caption>Data labels Y-axis</caption>
+            <category>Scale</category>
+            <description>Whether to show values on Y-axis the scale.</description>
+        </property>     
+        <!-- Grid Line -->
+        <property key="gridLineWidth" type="integer" required="true" defaultValue="1">
+            <caption>Grid line width</caption>
+            <category>Grid Line</category>
+            <description>Width of the grid lines.</description>
+        </property>
+        <property key="gridLineColor" type="string" required="true" defaultValue="rgba(0,0,0,.05)">
+            <caption>Grid line color</caption>
+            <category>Grid Line</category>
+            <description>Scale of the grid lines.(rgba)</description>
+        </property>
+        <property key="zeroGridLineWidth" type="integer" required="true" defaultValue="1">
+            <caption>Zero line width</caption>
+            <category>Grid Line</category>
+            <description>Width of the zero grid line. "Show horizontal lines" should be enabled.</description>
+        </property>
+        <property key="zeroGridLineColor" type="string" required="true" defaultValue="rgba(0,0,0,.05)">
+            <caption>Zero line color</caption>
+            <category>Grid Line</category>
+            <description>Color of the zero lines.(rgba) "Show horizontal lines" should be enabled.</description>
+        </property>
+        <property key="scaleShowHorizontalLines" type="boolean" required="true" defaultValue="true">
+            <caption>Show horizontal lines</caption>
+            <category>Grid Line</category>
+            <description>Whether to show horizontal lines (Does not affect X-axis).</description>
+        </property>
+        <property key="scaleShowVerticalLines" type="boolean" required="true" defaultValue="true">
+            <caption>Show vertical lines</caption>
+            <category>Grid Line</category>
+            <description>Whether to show vertical grid lines (Does not effect Y-axis).</description>
+        </property>
+        <!-- Legend -->
+        <property key="showLegend" type="boolean" required="true" defaultValue="true">
+            <caption>Show Legend (ChartJS)</caption>
+            <category>Legend</category>
+            <description>Displays a legend inside the graph</description>
+        </property>
+        <property key="showLegendLabel" type="boolean" required="true" defaultValue="true">
+            <caption>Show Legend Label</caption>
+            <category>Legend</category>
+            <description>Whether to show the data set labels in the (ChartJS) legend</description>
+        </property>
+        <property key="legendPosition" type="enumeration" required="true" defaultValue="top">
+            <caption>Position Legend</caption>
+            <category>Legend</category>
+            <description>Location to dispaly the (ChartJS) legend</description>
+            <enumerationValues>
+                <enumerationValue key="top">Top</enumerationValue>
+                <enumerationValue key="bottom">Bottom</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="showLegendCustom" type="boolean" required="true" defaultValue="false">
+            <caption>Show Legend (Custom)</caption>
+            <category>Legend</category>
+            <description>Displays a legend outside the graph</description>
+        </property>
+        <!-- Scale -->
+        <property key="suggestedMaxX" type="string" required="false">
+            <caption>Sugested Max X</caption>
+            <category>Scale</category>
+            <description>Integer Value. User defined maximum number for the scale, overrides maximum value except for if it is lower than the maximum value</description>
+        </property>
+        <property key="suggestedMinX" type="string" required="false" >
+            <caption>Sugested Min X</caption>
+            <category>Scale</category>
+            <description>Integer Value. User defined minimum number for the scale, overrides minimum value except for if it is higher than the minimum value.</description>
+        </property>
+        <property key="suggestedMaxY" type="string" required="false">
+            <caption>Sugested Max Y</caption>
+            <category>Scale</category>
+            <description>Integer Value. User defined maximum number for the scale, overrides maximum value except for if it is lower than the maximum value</description>
+        </property>
+        <property key="suggestedMinY" type="string" required="false" >
+            <caption>Sugested Min Y</caption>
+            <category>Scale</category>
+            <description>Integer Value. User defined minimum number for the scale, overrides minimum value except for if it is higher than the minimum value.</description>
         </property>
     </properties>
 </widget>

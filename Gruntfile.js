@@ -55,7 +55,7 @@ module.exports = function (grunt) {
         watch: {
             autoDeployUpdate: {
                 "files": [ "./src/**/*" ],
-                "tasks": [ "compress", "newer:copy" ],
+                "tasks": [ "compress", "copy" ],
                 options: {
                     debounceDelay: 250,
                     livereload: true
@@ -68,13 +68,13 @@ module.exports = function (grunt) {
                     archive: "./dist/" + pkg.name + ".mpk",
                     mode: "zip"
                 },
-            files: [{
-                expand: true,
-                date: new Date(),
-                store: false,
-                cwd: "./src",
-                src: ["**/*"]
-              }]
+                files: [{
+                    expand: true,
+                    date: new Date(),
+                    store: false,
+                    cwd: "./src",
+                    src: ["**/*"]
+                }]
             }
         },
         copy: {

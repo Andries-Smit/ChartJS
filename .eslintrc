@@ -1,0 +1,80 @@
+{
+    "extends": "eslint:all",    
+    "rules": {
+        "no-plusplus": "off",
+        "lines-around-comment": "off", // dont waste space with to many emty lines.
+        "no-inline-comments": "off", // why not!
+        "func-names": "off", // each object property does not have a function name, though ist recomended with other functions.
+        "object-property-newline": "off", // uses object-curly-newline, max 2 inline.
+        "no-underscore-dangle": "off", // danglint for private variables
+        "no-invalid-this": "off", // dojoLang.hitch
+        "vars-on-top": "off", // logger first
+        "no-negated-condition": "off", // create un needed if states.
+        "newline-before-return": "off", // no need?
+        "callback-return": "off", //  maybe should be enabled.
+        "prefer-rest-params": "off", // rest params are not widely supported
+        "sort-vars": "off", // not easy, when assigning derived value in de var declaration. 
+        "newline-after-var": "off", // could be a good option...
+        // FOB Preference.
+        "init-declarations": ["error", "always"],
+        "valid-jsdoc": ["error", { "requireReturn": false }], // we no not need return js-doc if non.
+        "id-length": ["error", { "exceptions": ["x", "y", "i", "j"] }],
+        "no-ternary" : "off",
+        "multiline-ternary" : "off",
+        "padded-blocks": ["error", "never"],
+        "linebreak-style": ["error", "windows"],
+        "consistent-return": "error",
+        "indent": ["error", 4],
+        "no-else-return": "error",
+        "semi": ["error", "always"],
+        "space-unary-ops": "error",
+        "max-statements": ["error", 16],
+        "max-depth": ["error", 5],
+        "complexity": ["error", 7],
+        "max-len": ["warn", {
+            "code": 100,
+            "ignoreComments": true
+        }],
+        "max-params": ["warn", 3],
+        "max-nested-callbacks": ["error", 1],
+        "no-trailing-spaces": "error",
+        "quotes": ["error", "double", {
+            "avoidEscape": true
+        }],
+        "camelcase": "error",
+        //"vars-on-top"           : "error",
+        "no-magic-numbers": ["error", {
+            "ignore": [-1, 0, 1]
+        }],
+        "spaced-comment": ["error", "always", {
+            "exceptions": ["-", "+"]
+        }],
+        "quote-props": ["error", "as-needed"],
+        //"object-curly-newline"  : ["error", {"minProperties": 3 }],
+        "object-curly-newline": ["error", {
+            "multiline": true,
+            "minProperties": 3
+        }],
+
+        "max-lines": ["error", {"max": 400, "skipBlankLines": true, "skipComments": true}],
+        "object-curly-spacing": ["error", "never"],
+        // disables es6 rules
+        "no-dupe-class-members": "off",
+        "no-var": "off",
+        "object-shorthand": "off",
+        "prefer-arrow-callback": "off",
+        "prefer-spread": "off",
+        "prefer-template": "off",
+
+    },
+    "env": {
+        "browser": true,
+        "amd": true,
+    },
+    "globals": {
+        "logger": true,
+        "mxui": true,
+        "mx": true,
+        "mendix": true
+    }
+}

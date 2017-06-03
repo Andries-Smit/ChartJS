@@ -1,3 +1,5 @@
+/*jslint browser: true, devel:true, nomen:true, unparam:true, regexp: true, plusplus: true */
+/*global define, require, mxui, mendix, mx, logger*/
 define([
 
     // Mixins
@@ -22,7 +24,7 @@ define([
     "dojo/ready",
 
     // External libraries
-    "ChartJS/lib/charts",
+    "ChartJS/lib/Chart",
 
     // Templates
     "dojo/text!ChartJS/templates/chartjs.html",

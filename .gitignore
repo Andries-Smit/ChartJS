@@ -7,6 +7,8 @@ test/userlib/
 test/widgets/
 test/.classpath
 test/.project
+test/.mendix-cache
+test/.svn
 *.launch
 *.tmp
 *.lock
@@ -19,3 +21,4 @@ node_modules/
 *DS_Store*
 .vscode/
 *.bak
+/nbproject/
